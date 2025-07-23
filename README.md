@@ -22,11 +22,45 @@ Este é um template repository para projetos de desenvolvimento.
 3. Instale as dependências necessárias
 4. Comece a desenvolver!
 
+## 🔧 Configuração do Pre-commit
+
+Este template inclui configuração completa do pre-commit para Python/Flask e frontend.
+
+### Instalação
+
+```bash
+# Instalar pre-commit
+pip install pre-commit
+
+# Instalar os hooks
+pre-commit install
+```
+
+### Hooks Incluídos
+
+**Python/Flask:**
+- **Black**: Formatação automática de código
+- **isort**: Organização de imports
+- **flake8**: Linting e verificação de estilo
+- **bandit**: Análise de segurança
+- **mypy**: Type checking
+- **safety**: Verificação de vulnerabilidades em dependências
+
+**Frontend:**
+- **prettier**: Formatação de CSS, JS, HTML
+- **eslint**: Linting JavaScript
+
+**Gerais:**
+- Remoção de espaços em branco
+- Verificação de arquivos YAML/JSON
+- Detecção de conflitos de merge
+- Commitizen para conventional commits
+
 ## 📋 Próximos Passos
 
-- [ ] Configurar package.json (se for projeto Node.js)
+- [ ] Configurar requirements.txt para Python
 - [ ] Adicionar workflows do GitHub Actions
-- [ ] Configurar ferramentas de linting e formatação
+- [ ] Configurar package.json (se usar frontend JS)
 - [ ] Adicionar templates de issues e pull requests
 - [ ] Personalizar este README com informações do seu projeto
 
